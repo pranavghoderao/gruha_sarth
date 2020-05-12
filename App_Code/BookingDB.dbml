@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="GRuhaSarthaDB" Class="BookingDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\GRuhaSarthaDB.mdf;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="GRuhaSarthaDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tbl_BookingDetails" Member="tbl_BookingDetails">
+    <Type Name="tbl_BookingDetail">
+      <Column Name="BookingId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="VendorID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CustName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CustEmail" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CustContact" Type="System.String" DbType="NChar(12)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
